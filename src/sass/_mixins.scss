@@ -1,0 +1,23 @@
+@mixin color-tab($color) {
+  display: inline-block;
+  padding: 10px 20px 10px 54px;
+  color: $text-light-color;
+  position: relative;
+  border-radius: 2px;
+
+  &:hover, &.active {
+    background: $color-tab-hover-background-color;
+
+  }
+
+  &:before {
+    display: inline-block;
+    content: '';
+    height: 18px;
+    width: 18px;
+    border-radius: 50%;
+    background: $color;
+    position: absolute;
+    left: 18px;
+  }
+}

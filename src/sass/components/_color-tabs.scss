@@ -1,0 +1,11 @@
+.signups-tab {
+  @include color-tab($signups-tab-color);
+}
+
+.FTD-tab {
+  @include color-tab($FTD-tab-color);
+}
+
+.earned-tab {
+  @include color-tab($earned-tab-color);
+}

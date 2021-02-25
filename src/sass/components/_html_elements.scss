@@ -1,0 +1,19 @@
+body {
+  font-family: $main-font;
+  font-size: $base-font-size;
+  color: $text-dark-color;
+  
+}
+
+a {
+  text-decoration: none;
+  color: $link-color;
+
+  &:hover {
+    color: $link-hover-color;
+  }
+
+  &.small {
+    font-size: 0.8rem;
+  }
+}

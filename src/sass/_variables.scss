@@ -1,0 +1,71 @@
+/* Colors */
+
+/* Color palette */
+
+$color-grey-scale-1: #333333;
+$color-grey-scale-2: #979797;
+$color-grey-scale-3: #B7B7B7;
+$color-grey-scale-4: #E3E3E3;
+$color-grey-scale-5: #F5F5F2;
+$color-grey-scale-6: #FFFFFF;
+
+$color-green-scale-1: #04AE00;
+$color-green-scale-2: #74B67A;
+$color-green-scale-3: #96CC9B;
+
+$color-orange-scale-1: #F58220;
+$color-orange-scale-2: #FFA200;
+
+$color-red-scale-1: #FF0000;
+$color-red-scale-2: #DE5252;
+$color-red-scale-3: #EC7171;
+
+$color-blue: #56819F;
+
+
+/* Functional colors */
+
+/* General colors */
+$text-dark-color: $color-grey-scale-1;
+$text-light-color: $color-grey-scale-2;
+
+
+$background-light-color: $color-grey-scale-6;
+$background-medium-color: $color-grey-scale-5;
+$backgroung-dark-color: $color-grey-scale-1;
+$brand-main-color: $color-grey-scale-6;
+
+/* Button colors */
+$btn-color: $color-grey-scale-6;
+$btn-background-color: $color-orange-scale-1;
+$btn-background-hover-color: $color-orange-scale-2;
+$btn--grey-background-color: $color-grey-scale-2;
+$btn--grey-background-hover-color: $color-grey-scale-3;
+$btn-background-disabled-color: $color-grey-scale-4;
+$btn-icon-color: $color-grey-scale-1;
+
+/* Text colors */
+
+$link-color: $color-blue;
+$link-hover-color: $color-orange-scale-2;
+
+
+$checkbox-label-hover-color: $color-grey-scale-5;
+$checkbox-box-border-color:$color-grey-scale-4;
+// $checkbox-box-checked-background-color: $color-green-scale-1;
+// $checkbox-box-checked-color: $color-grey-scale-6;
+
+$color-tab-hover-background-color: $color-grey-scale-5;
+$signups-tab-color: $color-blue;
+$FTD-tab-color: $color-orange-scale-2;
+$earned-tab-color: $color-green-scale-2;
+
+/* Font sizes */
+
+$base-font-size: 16px;
+
+/* Fonts */
+$brand-font: "Open Sans", Helvetica, Arial;
+$main-font: "Open Sans", Helvetica, Arial;
+$paragraph-font: "Open Sans", Helvetica, Arial;
+$icon-font: "Glyphter";
