@@ -1,0 +1,27 @@
+.number-list {
+  margin: 0;
+  padding: 0;
+  flex: 1 1 230px;
+  max-width: 500px;
+
+  li {
+    border-bottom: 1px solid $number-list-border-color;
+    padding: 15px 0 5px 0;
+    list-style: none;
+    display: flex;
+    justify-content: space-between;
+
+  }
+
+  .col-sm-6 {
+    padding: 0 10px;
+  }
+
+  &__description {
+    @include text-params($color: $font-light-color, $weight: $font-bold, $size: 16px);
+  }
+
+  &__value {
+    @include text-params($color: $font-dark-color, $weight: $font-light, $size: 16px);
+  }
+}

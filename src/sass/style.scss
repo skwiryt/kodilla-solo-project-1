@@ -1,6 +1,7 @@
 @import "../vendor/icons/css/Glyphter.css";
 @import "variables";
 @import "mixins";
+@import "grid";
 @import "normalize";
 @import "layout";
 
@@ -10,9 +11,21 @@
 @import "components/buttons";
 @import "components/checkbox";
 @import "components/color-tabs";
+@import "components/number-list";
+@import "components/date-period";
+@import "components/tables";
+@import "components/menu-links";
+@import "components/side-menu-header";
+@import "components/manager";
+@import "components/section-header";
+@import "components/scroll-wrapper";
 
 /* Sections */
-// @import "sections/registration_form";
+@import "sections/top-menu";
+@import "sections/side-menu";
+@import "sections/date-form-section";
+@import "sections/graph-section";
 
 /* Pages / Views */
-// @import "pages/registration";
+@import "pages/general";
+

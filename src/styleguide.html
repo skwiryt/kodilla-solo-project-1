@@ -4,11 +4,15 @@
     <title>styleguide</title>
     <meta charset="utf-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <link rel="stylesheet" href="vendor/bootstrap-grid.css">
+    <link rel="preconnect" href="https://fonts.gstatic.com">
+    <link href="https://fonts.googleapis.com/css2?family=Roboto:wght@300;500;700&display=swap" rel="stylesheet">
+    <!--<link rel="stylesheet" href="vendor/bootstrap-grid.css">-->
+   
     <link rel="stylesheet" href="css/style.css">
   </head>
   <body>
-    <div>Hi from styleguide... changing</div>
+    <div>Hi from styleguide</div>
+
     <h1>Lorem ipsum dolor sit amet, consectetur adipiscing elit.</h1>
     <h2>Lorem ipsum dolor sit amet, consectetur adipiscing elit.</h2>
     <h3>Lorem ipsum dolor sit amet, consectetur adipiscing elit.</h3>
@@ -16,7 +20,8 @@
     <h5>Lorem ipsum dolor sit amet, consectetur adipiscing elit.</h5>
     <h6>Lorem ipsum dolor sit amet, consectetur adipiscing elit.</h6>
     <p>Lorem ipsum dolor sit amet, consectetur <strong>adipiscing elit</strong>. Maecenas blandit diam urna, eu <a href="#">dignissim</a> ex dignissim consequat. Duis porta lectus lorem, quis eleifend justo scelerisque eget. Duis ac sem et turpis tincidunt molestie in non ipsum. Maecenas ut augue erat. Phasellus eu est commodo est hendrerit tempor. Mauris dignissim ex vel magna aliquet, sit amet facilisis turpis tincidunt. Fusce quis blandit libero, sed dapibus nisl. Pellentesque vitae ligula sed tellus sagittis dapibus eu non metus. Mauris rutrum ligula ut sapien varius, pellentesque volutpat diam porta. Ut at nunc ac tortor dapibus sodales id at leo. Nunc posuere lorem non feugiat elementum. Nunc sagittis diam justo, nec malesuada sapien tristique id. Vivamus in consequat nibh. Etiam tempor id ligula a dapibus. Proin vitae arcu nulla.</p>
-    <a href="#">Lorem ipsum dolor sit amet, consectetur adipiscing elit.</a>
+    <a href="#">Normal link: consectetur adipiscing elit.</a> <br>
+    <a class="small" href="#">Small link: consectetur adipiscing elit.</a>
     <ul>
       <li>Lorem ipsum dolor, consectetur <a href="#">consectetur adipiscing elit.</a>.</li>
       <li>Lorem ipsum dolor <strong>sit amet</strong></li>
@@ -27,5 +32,327 @@
       <li>Lorem ipsum dolor <strong>sit amet</strong></li>
       <li>Lorem ipsum dolor <strong>sit amet</strong>, consectetur <a href="#">consectetur adipiscing elit.</a>.</li>
     </ol>
+    <button>button</button>
+    <button class="btn"><span class="icon-arrow-down"></span>.btn</button>
+    <button class="btn btn--grey">.btn--grey</button>
+    <button disabled>std disabled</button>
+    <button class="btn" disabled><span class="icon-links"></span><span>disabled</span></button> <br>
+
+    <br>
+    
+    <input type="checkbox" id="test">
+    <label for="test">test checkbox</label>
+    <br><br>
+    <div class="signups-tab">Signups</div>
+    <div class="FTD-tab">FTD</div>
+    <div class="earned-tab active">Earned</div> <br> <br>
+    <div class="row">
+      <div class="col-3">col-3 alone no container col-3 alone no contain col-3 alone no container col-3 alone no container</div>
+    </div>
+    <div class="container">
+      <div class="row">
+        <div class="col-3">col-3 alone with container col-3 alone with container col-3 alone with container</div>
+      </div>
+    </div>
+    <div class="container-fluid">
+      <div class="row">
+        <div class="col-3">col-3 alone with container-fluid col-3 alone with container-fluid col-3 alone with container-fluid</div>
+      </div>
+    </div>
+
+    <div class="row">
+      <ul class="number-list">
+        <div class="row">          
+          <div class="col-12 col-sm-6">                
+            <li><span class="number-list__description">Line Header</span><span class="number-list__value">234</span></li>
+          </div>
+          <div class="col-12 col-sm-6">                
+            <li><span class="number-list__description">Line Header</span><span class="number-list__value">234</span></li>
+          </div>
+          <div class="col-12 col-sm-6">                
+            <li><span class="number-list__description">Line Header</span><span class="number-list__value">234</span></li>
+          </div>
+          <div class="col-12 col-sm-6">                
+            <li><span class="number-list__description">Line Header</span><span class="number-list__value">234</span></li>
+          </div>
+        </div>
+      </ul> 
+    </div>
+    <br> <br>
+    <div class="container-fluid">
+      <div class="row" style="border: 1px solid gray">
+        <div class="col-10">
+          <div class="top-menu-buttons">
+            <div class="top-menu-buttons__btn top-menu-buttons__sm-btn-1">
+              <span class="icon-wallet"></span><span>$1,500.00</span><span class="icon-arrow-down"></span>
+            </div>
+            
+            <div class="top-menu-buttons__btn top-menu-buttons__sm-btn-2">
+              <span class="icon-notification"></span><span class="dot-over-icon"></span>
+            </div>
+            <div class="top-menu-buttons__btn top-menu-buttons__sm-btn-3">
+              <span class="icon-profile"></span><span><a class="small" href="#">Leonardo Dicaprio</a></span>
+            </div>
+            <div class="top-menu-buttons__btn top-menu-buttons__sm-btn-4">
+              <span class="icon-quit"></span>
+            </div>
+          
+          </div>
+        </div>
+      </div>
+    </div>
+    <br> <br>
+
+    <div class="container-fluid">
+      <form>
+        <div class="ow"> 
+              <div class="date-period">
+                <input value="16.05.2016">
+                <input value="16.05.2016">
+                <span class="icon-calendar"></span>
+              </div>
+              <button class="btn btn--icon-only"><span class="icon-refresh"></span></button>
+        </div>
+      </form>
+    </div>
+    <br> <br>
+    <div class="container-fluid">
+      <div class="row">
+        <div class="col-6">
+          <table class="table-with-link">
+            <tr>
+              <th>Line header</th><td><a href="#">link bg</a></td>
+            </tr>
+            <tr>
+              <th>Line header</th><td><a href="#">link</a></td>
+            </tr>
+          </table>
+        </div>
+      </div>
+    </div>
+    <br><br>
+    <div class="container-fluid">
+      <div class="row">
+        <div class="col-2"></div>
+        <div class="col-3">
+          <ul class="menu-links">
+            <li><a href="#"><span class="icon-general"></span>General</a></li>
+            <li><a href="#"><span class="icon-details"></span>Details</a></li>
+            <li><a href="#"><span class="icon-links"></span>Links</a></li>
+            <li><a href="#"><span class="icon-banners"></span>Banners</a></li>
+            <li><a href="#"><span class="icon-personaldata"></span>Personal data</a></li>
+            <li><a href="#"><span class="icon-payout"></span>Payout</a></li>
+            <li><a href="#"><span class="icon-postback"></span>Postback</a></li>
+          </ul>
+          <div class="manager">
+            <h2 class="manager__header">
+              YOUR MANAGER
+            </h2>
+            <div class="manager__card">
+              <div class="manager__image">
+                <img src="images/photo.png">
+                <span class="dot-over-manager"></span>
+              </div>
+              <a href="#">Mikhael E.</a>
+            </div>            
+          </div>
+        </div>
+
+      
+        <div class="col-2"></div>
+      </div>
+    </div>
+
+    <br><br>
+
+    <div class="container-fluid">
+      <div class="row">
+        <div class="col-2"></div>
+        <div class="col-3">
+          <div class="side-menu-header">
+            <div class="logo-image">
+              <img src="images/logo.png">              
+            </div>
+            <div class="hamburger-image">
+              <img src="images/hamburger.png">
+            </div>
+          </div>
+        </div>
+        <div class="col-2"></div>
+      </div>
+    </div>
+
+    <br><br>
+      
+    <div class="container-fluid">
+      <div class="row">
+        <div class="col-2"></div>
+        <div class="col-3">
+          <div class="manager">
+            <h2 class="manager__header">
+              YOUR MANAGER
+            </h2>
+            <div class="manager__card">
+              <div class="manager__image">
+                <img src="images/photo.png">
+                <span class="dot-over-manager"></span>
+              </div>
+              <a href="#">Mikhael E.</a>
+            </div>            
+          </div>
+        </div>
+        <div class="col-2"></div>
+      </div>
+    </div>
+    <br><br>
+    <h2 class="section-header">
+      SECTION HEADER
+    </h2>
+    <br><p>section side-menu</p><br>
+    
+    <div class="container-fluid">     
+      <div class="side-menu">
+        <div class="side-menu-header">
+          <div class="logo-image">
+            <img src="images/logo.png">              
+          </div>
+          <div class="hamburger-image">
+            <img src="images/hamburger.png">
+          </div>
+        </div>
+        <div class="side-menu__body">
+          <ul class="menu-links">
+            <li><a href="#"><span class="icon-general"></span>General</a></li>
+            <li><a href="#"><span class="icon-details"></span>Details</a></li>
+            <li><a href="#"><span class="icon-links"></span>Links</a></li>
+            <li><a href="#"><span class="icon-banners"></span>Banners</a></li>
+            <li><a href="#"><span class="icon-personaldata"></span>Personal data</a></li>
+            <li><a href="#"><span class="icon-payout"></span>Payout</a></li>
+            <li><a href="#"><span class="icon-postback"></span>Postback</a></li>
+          </ul>
+          <div class="manager">
+            <h2 class="manager__header">
+              YOUR MANAGER
+            </h2>
+            <div class="manager__card">
+              <div class="manager__image">
+                <img src="images/photo.png">
+                <span class="dot-over-manager"></span>
+              </div>
+              <a href="#">Mikhael E.</a>
+            </div>            
+          </div>
+          <div class="top-menu-buttons">
+            <div class="top-menu-buttons__btn top-menu-buttons__sm-btn-1">
+              <span class="icon-wallet"></span><span>$1,500.00</span><span class="icon-arrow-down"></span>
+            </div>          
+            <div class="top-menu-buttons__btn top-menu-buttons__sm-btn-2">
+              <span class="icon-notification"></span><span class="dot-over-icon"></span>
+            </div>
+            <div class="top-menu-buttons__btn top-menu-buttons__sm-btn-3">
+              <span class="icon-profile"></span><span><a class="small" href="#">Leonardo Dicaprio</a></span>
+            </div>
+            <div class="top-menu-buttons__btn top-menu-buttons__sm-btn-4">
+              <span class="icon-quit"></span>
+            </div>        
+          </div> 
+        </div>            
+      </div>      
+    </div>
+
+<br> <br>
+scroll-wrapper component
+
+<div class="container-fluid">
+  <div class="scroll-wrapper">
+    <img src="images/graph.png">
+  </div>
+</div>
+
+
+    <br>
+    <p>section top-menu</p><br>
+
+    <div class="container-fluid">
+      <div class="top-menu">
+        <div class="top-menu-buttons">
+          <div class="top-menu-buttons__btn top-menu-buttons__sm-btn-1">
+            <span class="icon-wallet"></span><span>$1,500.00</span><span class="icon-arrow-down"></span>
+          </div>          
+          <div class="top-menu-buttons__btn top-menu-buttons__sm-btn-2">
+            <span class="icon-notification"></span><span class="dot-over-icon"></span>
+          </div>
+          <div class="top-menu-buttons__btn top-menu-buttons__sm-btn-3">
+            <span class="icon-profile"></span><span><a class="small" href="#">Leonardo Dicaprio</a></span>
+          </div>
+          <div class="top-menu-buttons__btn top-menu-buttons__sm-btn-4">
+            <span class="icon-quit"></span>
+          </div>        
+        </div> 
+      </div>
+    </div>
+    <br> <br>
+    <div>date-period-section</div>
+    <br><br>
+    <div class="container-fluid">
+      <form class="date-form-section">
+       
+        <div class="row"> 
+          <div class="col"></div>
+         
+          <div class="date-period">
+            <input value="16.05.2016">
+            <input value="16.05.2016">
+            <span class="icon-calendar"></span>
+          </div>
+          <div class="col-auto">
+            <button class="btn btn--icon-only"><span class="icon-refresh"></span></button>
+          </div>
+        
+         
+          <div class="col"></div>
+        </div>
+      </form>
+    </div>
+    
+    <div>section of lists</div>
+    <br><br>
+    <div class="number-list-section">   
+        <div class="row">
+          <div class="col"></div>
+          <ul class="number-list">
+            <div class="row">          
+              <div class="col-12 col-sm-6">                
+                <li><span class="number-list__description">Line Header</span><span class="number-list__value">234</span></li>
+              </div>
+              <div class="col-12 col-sm-6">                
+                <li><span class="number-list__description">Line Header</span><span class="number-list__value">234</span></li>
+              </div>
+              <div class="col-12 col-sm-6">                
+                <li><span class="number-list__description">Line Header</span><span class="number-list__value">234</span></li>
+              </div>
+              <div class="col-12 col-sm-6">                
+                <li><span class="number-list__description">Line Header</span><span class="number-list__value">234</span></li>
+              </div>
+            </div>
+          </ul>  
+          <div class="col"></div>
+        </div>    
+    
+    </div>
+    <div>graph section</div>
+    <br><br>
+    <div class="graph-section">   
+        <div class="row">
+          <div class="col"></div>
+          <div class="scroll-wrapper">            
+            <img src="images/graph.png">
+          </div>  
+          <div class="col"></div>
+        </div>    
+    
+    </div>
+    <br><br>
+    <p>End of file.</p>
   </body>
 </html>

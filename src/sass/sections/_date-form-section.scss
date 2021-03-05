@@ -1,0 +1,14 @@
+.date-form-section{
+  border-bottom: 1px solid $date-period-border-color;
+
+  .col-auto {
+    padding-left: 10px;
+  }
+  
+}
+
+@media (max-width: 576px) {
+  .date-period-form .col-auto {
+    padding-left: 0;
+  }
+}

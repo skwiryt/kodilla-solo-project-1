@@ -1,7 +1,7 @@
 @mixin color-tab($color) {
   display: inline-block;
   padding: 10px 20px 10px 54px;
-  color: $text-light-color;
+  @include text-params($color: $font-light-color, $weight: $base-font-weight, $size: $base-font-size);
   position: relative;
   border-radius: 2px;
 
@@ -21,3 +21,43 @@
     left: 18px;
   }
 }
+// ($family: $main-font, $weight: $base-font-weight, $size: $base-font-size, $color: $font-dark-color)
+
+@mixin text-params($family: null, $weight: null, $size: null, $color: null) {
+  @if $color != null {
+    color: $color;
+  }
+  @if $family != null {
+    font-family: $family;
+  }
+  @if $weight != null {
+    font-weight: $weight;
+  }
+  @if $size != null {
+    font-size: $size;
+  }
+  
+}
+
+
+@mixin grid($prefix: null) {
+  
+  @if $prefix == null {
+    @for $i from 1 through 12 {
+      .col-#{$i} {        
+        $width: 100% / 12 * $i;
+        flex: 0 0 $width;
+        max-width: $width;
+      }
+    }
+  } @else {    
+    
+    @for $i from 1 through 12 {
+      .col-#{$prefix}-#{$i} {
+        $width: 100% / 12 * $i;
+        flex: 0 0 $width;
+        max-width: $width;
+      }
+    }
+  } 
+} 

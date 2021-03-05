@@ -1,16 +1,24 @@
 .btn {
   border: none;
   border-radius: 2px;
-  color: $btn-color;
+  @include text-params($color: $btn-color, $weight: 300, $size: "18px");
   background: $btn-background-color;
-  padding: 10px 20px;
+  padding: 14px 22px;
   cursor: pointer;
-  
+
   [class*='icon-']::before{
     color: $btn-icon-color;
     vertical-align: bottom;
     padding-right: 20px;
     
+  }
+
+  &--icon-only {
+    padding: 14px 15px;
+
+    [class*='icon-']::before {
+      padding: 0;
+    }
   }
 
   &:hover {
@@ -30,3 +38,77 @@
     background: $btn-background-disabled-color;
   }
 }
+
+.top-menu-buttons {
+  @include text-params($color: $font-light-color, $weight: $font-normal, $size: 20px);
+  background: $top-menu-buttons-background-color;
+  display: flex;
+  flex-wrap: wrap;
+
+  &__btn {
+    height: 60px;
+    cursor: pointer;
+    border: none;
+    border-left: 1px solid $top-menu-btn-border-color;
+    padding-left: 15px;
+    position: relative;
+
+    a {
+      position: relative;
+      bottom: 4px;
+    }
+
+    > * {
+      position: relative;
+      top: 18px;
+      padding-right: 15px;
+    }
+
+
+    .dot-over-icon {
+      position: absolute;
+      background: $dot-over-icon-color;
+      display: block;
+      width: 10px;
+      height: 10px;
+      border-radius: 50%;
+      padding: 0;
+      right: 15px;
+      top: 15px;
+    }
+  }
+}
+
+@media (max-width: 576px) {
+  .top-menu-buttons {
+    &__sm-btn-1 {
+      order: 1;
+      flex: 0 0 calc(100% - 53px);
+      border-left: 1px solid $top-menu-btn-border-color;
+      border-bottom: 1px solid $top-menu-btn-border-color;
+    }
+
+    &__sm-btn-2 {
+      order: 2;
+      border-left: 1px solid $top-menu-btn-border-color;
+      border-right: 1px solid $top-menu-btn-border-color;
+      border-bottom: 1px solid $top-menu-btn-border-color;
+    }
+
+    &__sm-btn-3 {
+      order: 3;
+      flex: 0 0 calc(100% - 53px);
+      border-left: 1px solid $top-menu-btn-border-color;
+      border-bottom: 1px solid $top-menu-btn-border-color;
+    }
+
+    &__sm-btn-4 {
+      order: 4;
+      
+      border-left: 1px solid $top-menu-btn-border-color;
+      border-right: 1px solid $top-menu-btn-border-color;
+      border-bottom: 1px solid $top-menu-btn-border-color;
+    }
+  }  
+}
+

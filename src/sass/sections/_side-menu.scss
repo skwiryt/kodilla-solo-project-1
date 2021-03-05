@@ -1,0 +1,29 @@
+.side-menu {
+  width: 192px;
+  background: $side-menu-background-color;
+  z-index: 1;
+
+  .top-menu-buttons {
+    display: none;
+  }
+}
+
+@media (max-width: 576px) {
+  .side-menu {
+    width: 100%;
+
+    &__body {
+      display: none;
+    }
+
+    &--show {
+      .side-menu__body {
+        display: block;
+    
+        .top-menu-buttons {
+          display: flex;
+        }
+      }
+    }
+  }
+}

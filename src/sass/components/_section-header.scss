@@ -1,0 +1,5 @@
+.section-header {
+  @include text-params($color: $font-light-color, $weight: $font-normal, $size: 16px);
+  padding: 15px;
+  border-bottom: 1px solid $section-header-border-color;
+}

@@ -2,6 +2,7 @@
 
 /* Color palette */
 
+$color_black: black;
 $color-grey-scale-1: #333333;
 $color-grey-scale-2: #979797;
 $color-grey-scale-3: #B7B7B7;
@@ -26,14 +27,14 @@ $color-blue: #56819F;
 /* Functional colors */
 
 /* General colors */
-$text-dark-color: $color-grey-scale-1;
-$text-light-color: $color-grey-scale-2;
+$font-dark-color: $color-grey-scale-1;
+$font-light-color: $color-grey-scale-2;
+$font-white-color: $color-grey-scale-6;
 
 
 $background-light-color: $color-grey-scale-6;
 $background-medium-color: $color-grey-scale-5;
 $backgroung-dark-color: $color-grey-scale-1;
-$brand-main-color: $color-grey-scale-6;
 
 /* Button colors */
 $btn-color: $color-grey-scale-6;
@@ -43,29 +44,51 @@ $btn--grey-background-color: $color-grey-scale-2;
 $btn--grey-background-hover-color: $color-grey-scale-3;
 $btn-background-disabled-color: $color-grey-scale-4;
 $btn-icon-color: $color-grey-scale-1;
+$dot-over-icon-color:$color-orange-scale-1;
 
-/* Text colors */
-
-$link-color: $color-blue;
-$link-hover-color: $color-orange-scale-2;
-
-
-$checkbox-label-hover-color: $color-grey-scale-5;
-$checkbox-box-border-color:$color-grey-scale-4;
-// $checkbox-box-checked-background-color: $color-green-scale-1;
-// $checkbox-box-checked-color: $color-grey-scale-6;
-
+/* Color-tab colors */
 $color-tab-hover-background-color: $color-grey-scale-5;
 $signups-tab-color: $color-blue;
 $FTD-tab-color: $color-orange-scale-2;
 $earned-tab-color: $color-green-scale-2;
 
-/* Font sizes */
+/* Other colors */
 
-$base-font-size: 16px;
+$brand-color: $color-grey-scale-6;
+
+$link-color: $color-blue;
+$link-hover-color: $color-orange-scale-2;
+
+$checkbox-label-hover-color: $color-grey-scale-5;
+$checkbox-box-border-color:$color-grey-scale-4;
+
+$number-list-border-color: $color-grey-scale-3;
+$top-menu-btn-border-color: $color-grey-scale-3;
+$top-menu-buttons-background-color: $color-grey-scale-6;
+$top-menu-border-color:$color-grey-scale-3;
+$date-period-border-color: $color-grey-scale-3;
+$date-period-icon-color: $color-grey-scale-2;
+$date-period-border-hover-color: $color-grey-scale-2;
+$date-period-icon-hover-color: $color-grey-scale-1;
+
+$table-line-color: $color-grey-scale-3;
+$table-background-hover-color: $color-grey-scale-4;
+
+$side-menu-background-color: lighten($color-black, 5%);
+$menu-links-background-hover-color: lighten($color-black, 15%);
+$manager-border-color: $color-grey-scale-3;
+$section-header-border-color: $color-grey-scale-3;
+$date-period-form-border-color: orange;
 
 /* Fonts */
+
 $brand-font: "Open Sans", Helvetica, Arial;
-$main-font: "Open Sans", Helvetica, Arial;
-$paragraph-font: "Open Sans", Helvetica, Arial;
+$main-font: "Roboto";
+$fallback-font: "Open Sans", Helvetica, Arial;
 $icon-font: "Glyphter";
+
+$base-font-size: 14px;
+$base-font-weight: 300;
+$font-light: 300;
+$font-bold: 700;
+$font-normal: 500;

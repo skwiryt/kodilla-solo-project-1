@@ -1,0 +1,10 @@
+.general {
+
+  margin-bottom: 15px;
+
+  background: $background-light-color;
+
+  [class$="-section"] {
+    padding: 50px 0;
+  }
+}

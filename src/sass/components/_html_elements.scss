@@ -1,19 +1,28 @@
+html {
+  box-sizing: border-box;
+  -ms-overflow-style: scrollbar;
+}
+
+*,
+*::before,
+*::after {
+  box-sizing: inherit;
+}
+
 body {
-  font-family: $main-font;
-  font-size: $base-font-size;
-  color: $text-dark-color;
-  
+  @include text-params($family: $main-font, $weight: $base-font-weight, $size: $base-font-size, $color: $font-dark-color);
+
 }
 
 a {
   text-decoration: none;
-  color: $link-color;
+  @include text-params($color: $link-color, $weight: $base-font-weight, $size: 16px);
 
   &:hover {
     color: $link-hover-color;
   }
 
   &.small {
-    font-size: 0.8rem;
+    font-size: 13px;
   }
 }

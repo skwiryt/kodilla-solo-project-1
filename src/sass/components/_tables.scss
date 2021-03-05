@@ -1,0 +1,30 @@
+.table-with-link {
+  width: 100%;
+  border-collapse: collapse;
+  border-top: 1px solid $table-line-color;
+  
+
+  // table-layout: fixed;
+  th {
+    @include text-params($color: $font-light-color, $weight: $font-bold, $size: 16px);
+    text-align: left;
+    padding: 20px 0 20px 20px;
+    width: 100%;
+  }
+
+  tr {
+    border-bottom: 1px solid $table-line-color;
+    
+    &:hover {
+      background: $table-background-hover-color;
+    }
+  }
+
+  td {
+    display: block;
+    padding: 20px 40px 20px 0;
+    width: max-content;
+  }
+  
+  
+}

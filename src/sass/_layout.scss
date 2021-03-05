@@ -1,0 +1,42 @@
+.empty-template {
+  background: $backgroung-dark-color;
+
+  .container-fluid {
+    position: relative;
+  }
+
+  .top-menu {
+    position: fixed;
+    width: calc(100% - 192px);
+    top: 0;
+    left: 192px;
+  }
+
+  .side-menu {
+    position: fixed;
+    top: 0;
+    left: 0;
+  }
+
+  main {
+    margin-top: 60px;
+    margin-left: 192px;
+    padding: 15px;
+    min-height: 100vh;
+    background: $background-medium-color;
+  }
+}
+
+@media (max-width: 576px) {
+  .empty-template {
+    main {
+      margin-left: 0;    
+    }
+  
+    .side-menu {
+      position: absolute;
+     
+    }
+  }
+   
+}
