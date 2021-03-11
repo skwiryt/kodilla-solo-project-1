@@ -43,9 +43,12 @@
     <input type="checkbox" id="test">
     <label for="test">test checkbox</label>
     <br><br>
+
     <div class="signups-tab">Signups</div>
-    <div class="FTD-tab">FTD</div>
+    <div class="ftd-tab">FTD</div>
     <div class="earned-tab active">Earned</div> <br> <br>
+
+
     <div class="row">
       <div class="col-3">col-3 alone no container col-3 alone no contain col-3 alone no container col-3 alone no container</div>
     </div>
@@ -61,22 +64,22 @@
     </div>
 
     <div class="row">
-      <ul class="number-list">
-        <div class="row">          
+      <div class="number-list">
+        <div class="row">
           <div class="col-12 col-sm-6">                
-            <li><span class="number-list__description">Line Header</span><span class="number-list__value">234</span></li>
+            <div class="number-list__item"><span class="number-list__description">Line Header</span><span class="number-list__value">234</span></div>
           </div>
           <div class="col-12 col-sm-6">                
-            <li><span class="number-list__description">Line Header</span><span class="number-list__value">234</span></li>
+            <div class="number-list__item"><span class="number-list__description">Line Header</span><span class="number-list__value">234</span></div>
           </div>
           <div class="col-12 col-sm-6">                
-            <li><span class="number-list__description">Line Header</span><span class="number-list__value">234</span></li>
+            <div class="number-list__item"><span class="number-list__description">Line Header</span><span class="number-list__value">234</span></div>
           </div>
           <div class="col-12 col-sm-6">                
-            <li><span class="number-list__description">Line Header</span><span class="number-list__value">234</span></li>
+            <div class="number-list__item"><span class="number-list__description">Line Header</span><span class="number-list__value">234</span></div>
           </div>
         </div>
-      </ul> 
+      </div> 
     </div>
     <br> <br>
     <div class="container-fluid">
@@ -114,7 +117,7 @@
               <button class="btn btn--icon-only"><span class="icon-refresh"></span></button>
         </div>
       </form>
-    </div>
+    </div>    
     <br> <br>
     <div class="container-fluid">
       <div class="row">
@@ -205,9 +208,13 @@
       </div>
     </div>
     <br><br>
-    <h2 class="section-header">
+    <h1 class="page-header">
+      PAGE HEADER
+    </h1>
+    <br> <br>
+    <h1 class="section-header">
       SECTION HEADER
-    </h2>
+    </h1>
     <br><p>section side-menu</p><br>
     
     <div class="container-fluid">     
@@ -260,16 +267,14 @@
       </div>      
     </div>
 
-<br> <br>
-scroll-wrapper component
+    <br> <br>
+    <p>scroll-wrapper component</p><br>
 
-<div class="container-fluid">
-  <div class="scroll-wrapper">
-    <img src="images/graph.png">
-  </div>
-</div>
-
-
+    <div class="container-fluid">
+      <div class="scroll-wrapper">
+        <img src="images/graph.png">
+      </div>
+    </div>
     <br>
     <p>section top-menu</p><br>
 
@@ -297,8 +302,7 @@ scroll-wrapper component
     <div class="container-fluid">
       <form class="date-form-section">
        
-        <div class="row"> 
-          <div class="col"></div>
+        <div class="row row--center"> 
          
           <div class="date-period">
             <input value="16.05.2016">
@@ -310,7 +314,6 @@ scroll-wrapper component
           </div>
         
          
-          <div class="col"></div>
         </div>
       </form>
     </div>
@@ -318,41 +321,258 @@ scroll-wrapper component
     <div>section of lists</div>
     <br><br>
     <div class="number-list-section">   
-        <div class="row">
-          <div class="col"></div>
-          <ul class="number-list">
-            <div class="row">          
+        <div class="row row--center">
+          <div class="number-list">
+            <div class="row">
               <div class="col-12 col-sm-6">                
-                <li><span class="number-list__description">Line Header</span><span class="number-list__value">234</span></li>
+                <div class="number-list__item"><span class="number-list__description">Line Header</span><span class="number-list__value">234</span></div>
               </div>
               <div class="col-12 col-sm-6">                
-                <li><span class="number-list__description">Line Header</span><span class="number-list__value">234</span></li>
+                <div class="number-list__item"><span class="number-list__description">Line Header</span><span class="number-list__value">234</span></div>
               </div>
               <div class="col-12 col-sm-6">                
-                <li><span class="number-list__description">Line Header</span><span class="number-list__value">234</span></li>
+                <div class="number-list__item"><span class="number-list__description">Line Header</span><span class="number-list__value">234</span></div>
               </div>
               <div class="col-12 col-sm-6">                
-                <li><span class="number-list__description">Line Header</span><span class="number-list__value">234</span></li>
+                <div class="number-list__item"><span class="number-list__description">Line Header</span><span class="number-list__value">234</span></div>
               </div>
             </div>
-          </ul>  
-          <div class="col"></div>
+          </div> 
         </div>    
     
     </div>
     <div>graph section</div>
     <br><br>
-    <div class="graph-section">   
-        <div class="row">
-          <div class="col"></div>
-          <div class="scroll-wrapper">            
-            <img src="images/graph.png">
-          </div>  
-          <div class="col"></div>
-        </div>    
-    
+    <div class="graph-section">
+      <div class="row row--center">
+        <h1 class="section-header">
+          Section header.
+        </h1>
+      </div>
+      
+      <div class="row row--center">
+
+        <div class="scroll-wrapper">            
+          <img src="images/graph.png">
+        </div> 
+      </div>
     </div>
     <br><br>
+    <div>add section</div>
+    <br><br>
+    <div class="add-section">   
+        <div class="row row--center">
+          <button class="btn">+ add new</button>
+        </div>
+    </div>
+    <div>links table section</div>
+    <br><br>
+    <div class="table-with-link-section">   
+      <div class="row row--center">
+        <div class="scroll-wrapper">
+        <table class="table-with-link">
+          <tr>
+            <th>Line header</th><td><a href="#">link bg</a></td>
+          </tr>
+          <tr>
+            <th>Line header</th><td><a href="#">link</a></td>
+          </tr>
+        </table>
+        </div>
+      </div>
+    </div>
+    <br><br>
+    <div>links table section with icons for banners page</div>
+    <br><br>
+    <div class="table-with-link-section">   
+      <div class="row row--center">
+        <div class="scroll-wrapper">
+        <table class="table-with-link">
+          <tr>
+            <th>Line header</th>
+            <td><a href="#">link bg</a></td>
+            <td><span class="icon-links"></span><span class="icon-trash"></span></td>
+            
+          </tr>
+          <tr>
+            <th>Line header</th>
+            <td><a href="#">link</a></td>
+            <td><span class="icon-links"></span><span class="icon-trash"></span></td>
+            
+          </tr>
+        </table>
+        </div>
+      </div>
+    </div>
+  </div>
+    <br><br>
+    <div>fieldset of personal data form</div>
+    <br><br>
+    <div class="row row--center">
+      <div class="fieldset">
+        <div class="input-group">
+          <div class="col-12 col-sm-4">
+            <label>Etykieta 1</label>
+          </div>
+          <div class="col-12 col-sm-8">
+            <input type="text" value="wartość 1">
+          </div>
+        </div>
+        <div class="input-group">
+          <div class="col-12 col-sm-4">
+            <label>Etykieta 2</label>
+          </div>
+          <div class="col-12 col-sm-8">
+            <input type="text" value="wartość 2">
+          </div>
+        </div>
+      </div>
+
+    </div>
+
+    <br><br>
+    <div>table with sorting</div>
+    <div class="container-fluid">
+      <div class="row row--center">
+        <div class="scroll-wrapper">
+          <table class="table-with-sorting">
+            <thead>
+              <tr>
+                <th><span>Tracker name</span><span class="icon-arrow-up-small"></span></th>
+                <th><span>Initiated date</span><span class="icon-arrow-up-small"></span></th>
+                <th><span>Visits</span><span class="icon-arrow-up-small"></span></th>
+                <th><span>Unique</span><span class="icon-arrow-up-small"></span></th>
+                <th><span>Signups</span><span class="icon-arrow-up-small"></span></th>
+                <th><span>FTD</span><span class="icon-arrow-up-small"></span></th>
+                <th><span>Depositors</span><span class="icon-arrow-up-small"></span></th>
+                <th><span>Deposits ($)</span><span class="icon-arrow-up-small"></span></th>
+                <th><span>Payout ($)</span><span class="icon-arrow-up-small"></span></th>
+                <th><span>Turnover</span><span class="icon-arrow-up-small"></span></th>
+                <th><span>Deal</span><span class="icon-arrow-up-small"></span></th>
+              </tr>              
+            </thead>
+            <tbody>
+              <tr>
+                <td>aff/sam_test</td>
+                <td>17/08/02 (12:58)</td>
+                <td>232</td>
+                <td>114</td>
+                <td>12</td>
+                <td>6</td>
+                <td>3</td>
+                <td>34,325.00</td>
+                <td>234.00</td>
+                <td>421,342.00</td>
+                <td>cpl (200)</td>
+              </tr>
+              <tr>
+                <td>aff/sam_test</td>
+                <td>17/08/02 (12:58)</td>
+                <td>232</td>
+                <td>114</td>
+                <td>12</td>
+                <td>6</td>
+                <td>3</td>
+                <td>34,325.00</td>
+                <td>234.00</td>
+                <td>421,342.00</td>
+                <td>cpl (200)</td>
+              </tr>
+              <tr>
+                <td>aff/sam_test</td>
+                <td>17/08/02 (12:58)</td>
+                <td>232</td>
+                <td>114</td>
+                <td>12</td>
+                <td>6</td>
+                <td>3</td>
+                <td>34,325.00</td>
+                <td>234.00</td>
+                <td>421,342.00</td>
+                <td>cpl (200)</td>
+              </tr>
+              <tr>
+                <td>aff/sam_test</td>
+                <td>17/08/02 (12:58)</td>
+                <td>232</td>
+                <td>114</td>
+                <td>12</td>
+                <td>6</td>
+                <td>3</td>
+                <td>34,325.00</td>
+                <td>234.00</td>
+                <td>421,342.00</td>
+                <td>cpl (200)</td>
+              </tr>
+              <tr>
+                <td>aff/sam_test</td>
+                <td>17/08/02 (12:58)</td>
+                <td>232</td>
+                <td>114</td>
+                <td>12</td>
+                <td>6</td>
+                <td>3</td>
+                <td>34,325.00</td>
+                <td>234.00</td>
+                <td>421,342.00</td>
+                <td>cpl (200)</td>
+              </tr>
+
+            </tbody>
+          </table>
+        </div>
+      </div>
+    </div>
+
+    <br><br>
+    <div>pagination</div>
+    <br><br>
+
+    <div class="row row--center">
+
+      <div class="pagination">
+        <p class="pagination__left-nav">
+          <span class="icon-arrow-left"></span>
+        </p>
+        <a class="active" href="#1" class="pagination_page">1</a>
+        <a href="#2" class="pagination_page">2</a>
+        <a href="#3" class="pagination_page">3</a>
+        <a href="#4" class="pagination_page">4</a>
+        <a href="#5" class="pagination_page">5</a>
+        <a href="#6" class="pagination_page">6</a>
+        <a href="#7" class="pagination_page">7</a>
+        <a href="#8" class="pagination_page">8</a>
+        <a href="#9" class="pagination_page">9</a>
+
+        <p class="pagination__right-nav">
+          <span class="icon-arrow-right"></span>
+        </p>
+      </div>
+    </div>
+
+    <br><br>
+    <div class="container-fluid">
+      <div class="row">
+        <div class="col-4">
+          <div class="input-with-icon">
+            <span class="icon-login"></span>        
+          <input type="text" value="login name">
+          </div>
+          <button class="btn">to compare</button>
+        </div>
+        <div class="col-4">
+          <div class="input-with-icon">
+            <span class="icon-password"></span>
+            <input type="password" placeholder="password">
+          </div>          
+          <button class="btn">to compare</button>
+        </div>
+      </div>
+    </div>
     <p>End of file.</p>
+  
+  
+  
+  <script src="js/script.js"></script>
   </body>
 </html>

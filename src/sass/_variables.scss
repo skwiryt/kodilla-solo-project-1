@@ -64,7 +64,8 @@ $checkbox-box-border-color:$color-grey-scale-4;
 
 $number-list-border-color: $color-grey-scale-3;
 $top-menu-btn-border-color: $color-grey-scale-3;
-$top-menu-buttons-background-color: $color-grey-scale-6;
+$top-menu-btn-background-color: $color-grey-scale-6;
+$top-menu-btn-hover-background-color: $color-grey-scale-5;
 $top-menu-border-color:$color-grey-scale-3;
 $date-period-border-color: $color-grey-scale-3;
 $date-period-icon-color: $color-grey-scale-2;
@@ -73,12 +74,20 @@ $date-period-icon-hover-color: $color-grey-scale-1;
 
 $table-line-color: $color-grey-scale-3;
 $table-background-hover-color: $color-grey-scale-4;
+$table-links-icon-color: $color-orange-scale-2;
+$table-trash-icon-color: $color-grey-scale-3;
 
 $side-menu-background-color: lighten($color-black, 5%);
 $menu-links-background-hover-color: lighten($color-black, 15%);
 $manager-border-color: $color-grey-scale-3;
 $section-header-border-color: $color-grey-scale-3;
-$date-period-form-border-color: orange;
+$date-form-border-color: $color-grey-scale-3;
+
+$text-input-border-color: $color-grey-scale-3;
+$text-input-border-hover-color:$color-grey-scale-2;
+$fieldset-border-color: $color-grey-scale-3;
+$picked-page-background-color: $color-grey-scale-4;
+
 
 /* Fonts */
 

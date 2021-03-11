@@ -1,5 +1,6 @@
 .side-menu {
   width: 192px;
+  height: 100vh;
   background: $side-menu-background-color;
   z-index: 1;
 
@@ -11,6 +12,7 @@
 @media (max-width: 576px) {
   .side-menu {
     width: 100%;
+    height: auto;
 
     &__body {
       display: none;

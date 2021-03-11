@@ -42,6 +42,11 @@
 .row {
   display: flex;
   flex-wrap: wrap;
+
+  &--center {
+    
+    justify-content: center;
+  }
 }
 
 .col {

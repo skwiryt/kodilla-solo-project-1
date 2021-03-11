@@ -3,7 +3,7 @@
   border-radius: 2px;
   @include text-params($color: $btn-color, $weight: 300, $size: "18px");
   background: $btn-background-color;
-  padding: 14px 22px;
+  padding: 10px 22px;
   cursor: pointer;
 
   [class*='icon-']::before{
@@ -14,7 +14,7 @@
   }
 
   &--icon-only {
-    padding: 14px 15px;
+    padding: 10px 10px;
 
     [class*='icon-']::before {
       padding: 0;
@@ -41,7 +41,7 @@
 
 .top-menu-buttons {
   @include text-params($color: $font-light-color, $weight: $font-normal, $size: 20px);
-  background: $top-menu-buttons-background-color;
+  background: $top-menu-btn-background-color;
   display: flex;
   flex-wrap: wrap;
 
@@ -64,6 +64,9 @@
       padding-right: 15px;
     }
 
+    &:hover {
+      background: $top-menu-btn-hover-background-color
+    }
 
     .dot-over-icon {
       position: absolute;

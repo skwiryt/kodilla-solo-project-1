@@ -18,8 +18,8 @@
     
     // width: 120px;
     width: calc(50% - 15px);
-    padding: 10px 0 10px 15px;
-    line-height: 1.7;
+    padding: 9px 0 9px 15px;
+    //line-height: 1.7;
 
     &:focus {
       outline: none;
@@ -34,7 +34,7 @@
     left: calc(50% - 15px);
     display: block;
     width: 1px;
-    height: 35px;
+    height: 26px;
     content: "";
     border-left: 1px solid $date-period-border-color;
   }
@@ -42,7 +42,7 @@
   [class*='icon-'] {
     position: absolute;
     color: $date-period-icon-color;
-    top: 10px;
+    top: 8px;
     right: 15px;
     
     &:hover {

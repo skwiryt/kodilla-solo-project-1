@@ -1,4 +1,4 @@
-.empty-template {
+.template {
   background: $backgroung-dark-color;
 
   .container-fluid {
@@ -25,10 +25,46 @@
     min-height: 100vh;
     background: $background-medium-color;
   }
+
+  &--general {
+    .general , .links {
+      display: block;
+    }
+  }
+
+  &--links {
+    .links {
+      display: block;
+    }
+  }
+
+  &--banners {
+    .banners {
+      display: block;
+    }
+  }
+
+  &--personal {
+    .personal {
+      display: block;
+    }
+  }
+
+  &--details {
+    .details {
+      display: block;
+    }
+  }
+
+  &--payout {
+    .payout {
+      display: block;
+    }
+  }
 }
 
 @media (max-width: 576px) {
-  .empty-template {
+  .template {
     main {
       margin-left: 0;    
     }

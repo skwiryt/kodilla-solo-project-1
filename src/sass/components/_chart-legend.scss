@@ -1,0 +1,22 @@
+[class="0-legend"] {
+  // background:papayawhip;  
+  padding-left: 0;
+  display: flex;
+  justify-content: center;
+  
+  li {
+    list-style: none;
+    display: inline-block;
+    margin: 0 10px;
+    /*
+    span {
+      display: inline-block;
+      border-radius: 5px;
+      width: 40px;
+      height: 13px;
+      margin-right: 5px;
+    }
+    */
+  }
+  
+}

@@ -1,5 +1,6 @@
 @mixin color-tab($color) {
   display: inline-block;
+  cursor: pointer;
   padding: 10px 20px 10px 54px;
   @include text-params($color: $font-light-color, $weight: $base-font-weight, $size: $base-font-size);
   position: relative;
