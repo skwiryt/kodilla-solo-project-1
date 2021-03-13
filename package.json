@@ -15,7 +15,7 @@
         "test:scss": "stylelint --fix src/sass/",
         "build": "npm-run-all build:* test",
         "build:clean": "mkdirp dist && rm -r dist && mkdirp dist",
-        "build:copy": "copyfiles -a -u 1 -e \"**/sass/**/*\" -e \"**/.gitkeep\" \"src/**/*\" dist",
+        "build:copy": "copyfiles -a -u 1 -e \"**/styleguide.html -e \"**/vendor/**/*\" -e \"**/sass/**/*\" -e \"**/.gitkeep\" \"src/**/*\" dist",
         "build:sass": "node-sass --output-style compact -o dist/css src/sass",
         "build:autoprefixer": "postcss dist/css/style.css --use autoprefixer -d ./dist/css",
         "build-dev": "npm-run-all build-dev:sass build:autoprefixer",
