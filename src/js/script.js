@@ -214,13 +214,11 @@ const app = {
       thisApp.openModal(modal);
     });
 
-    document.querySelectorAll('#loginTrigger')
-      .forEach((trigger) => trigger
-        .addEventListener('click', function() {
-          const modal = document.querySelector('#loginModal');
-          thisApp.openModal(modal);
-        })
-      );
+    document.querySelector('#loginTrigger').addEventListener('click', function() {
+      const modal = document.querySelector('#loginModal');
+      thisApp.openModal(modal);
+    });
+      
   },
 
   closeModals: function() {
@@ -231,6 +229,7 @@ const app = {
     document.querySelectorAll('#overlay > *').forEach(function(modal) {
       modal.classList.remove('show');
     });
+    
     document.querySelector('#overlay').classList.add('show');
     modal.classList.add('show');
   },
