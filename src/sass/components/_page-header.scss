@@ -1,6 +1,0 @@
-.page-header {
-  @include text-params($color: $font-light-color, $weight: $font-normal, $size: 16px);
-  margin: 0;
-  padding: 15px;
-  border-bottom: 1px solid $section-header-border-color;
-}
